@@ -11,13 +11,13 @@ p {
 }
 .fade-enter {
   opacity: 0;
-  transform: translate(0, 25px);
+  transform: translate(0, 10px);
   z-index: 1;
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
   transform: translate(0, 0);
-  transition: opacity 250ms ease-out, transform 100ms ease;
+  transition: opacity 250ms ease, transform 100ms ease;
 }
 .fade-exit {
   opacity: 1;
@@ -25,6 +25,6 @@ p {
 }
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transform: translate(0, 30px);
-  transition: opacity 250ms ease-out, transform 100ms ease;
+  transform: translate(0, 20px);
+  transition: opacity 150ms ease, transform 50ms ease;
 }
